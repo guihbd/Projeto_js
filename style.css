@@ -1,0 +1,41 @@
+h1{
+    position: absolute;
+    left: 580px;
+    
+}
+
+hr{
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    right: 0px;
+    
+   
+}
+
+h2{
+    position: absolute;
+    left: 70px;
+    top: 170px;
+    font-size: 20px;
+}
+
+
+h3{
+    position: absolute;
+    left: 70px;
+    top: 510px;
+    font-size: 20px;
+}
+
+#container{
+    position: absolute;
+    left: 70px;
+    top: 230px;
+    width: 380px;
+    height: 200px;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+}
+
