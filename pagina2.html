@@ -11,12 +11,34 @@
     <h1>Bem Vindo</h1>
     <p><span id="frase_usuario"></span></p>
 
+    <div id="area_carregamento" class="carregamento-escondido">
+        <span id="texto_carregamento">Carregando...</span>
+        <div class="barra-carregamento">
+            <div id="progresso_barra" class="progresso-barra"></div>
+        </div>
+    </div>
 
+    <script>
+        const nome = window.prompt("Qual seu nome?");
+        const numero = window.prompt("Digite um número");
 
-        <script >
-            nome = window.prompt("Qual seu nome?");
-            numero = window.prompt("Digite um número");
-            document.getElementById("frase_usuario").innerHTML = "botando no cuzinho do" +" " +  nome +" " +  numero  + " vezes";
-        </script>
+        document.getElementById("frase_usuario").innerHTML =
+            "botando no cuzinho do " + nome + " " + numero + " vezes";
+
+        const areaCarregamento = document.getElementById("area_carregamento");
+        const progressoBarra = document.getElementById("progresso_barra");
+
+        areaCarregamento.classList.remove("carregamento-escondido");
+
+        let progresso = 0;
+        const intervalo = setInterval(() => {
+            progresso += 2;
+            progressoBarra.style.width = `${progresso}%`;
+
+            if (progresso >= 100) {
+                clearInterval(intervalo);
+            }
+        }, 60);
+    </script>
 </body>
 </html>
