@@ -49,3 +49,8 @@ h3{
     background-color: white;
 }
 
+nav{
+   position: absolute;
+   top: 100px;
+   right: 15px;
+}

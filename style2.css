@@ -1,0 +1,11 @@
+h1{
+    position: absolute;
+    left: 580px;
+}
+
+p{
+    position: absolute;
+    left: 525px;
+    top: 150px;
+    font-size: 18px;
+}
